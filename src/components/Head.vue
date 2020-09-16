@@ -15,6 +15,7 @@
         <router-link :to="{path:'/list',query:{id:4}}" class="btn">计算机</router-link>
       </div>
       <div class="gy">关于我们</div>
+      <span class="sp">鲁ICP备2020033889号</span>
     </div>
   </div>
 </template>
@@ -27,8 +28,7 @@ export default {
   },
   created() {},
   computed: {},
-  methods: {
-  },
+  methods: {},
   mounted() {},
   beforeCreate() {}, // 生命周期 - 创建之前
   beforeMount() {}, // 生命周期 - 挂载之前
@@ -73,7 +73,6 @@ export default {
 .title p {
   font-size: 40px;
   font-weight: bold;
-  
 }
 .title .small {
   font-weight: 400;
@@ -83,5 +82,14 @@ export default {
 .gy {
   flex: 2;
   padding-left: 20px;
+}
+.sp {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  color: #ccc;
 }
 </style>
